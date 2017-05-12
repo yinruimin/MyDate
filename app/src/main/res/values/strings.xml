@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyDate</string>
+    <string name="remind">提示信息</string>
+    <string name="isOk">确定激活任务</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确认</string>
+    <string name="question">\?</string>
+</resources>

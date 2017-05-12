@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.example.user.mydate.MainActivity">
+
+    <TextView
+        android:id="@+id/selectDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="select"
+        android:text="日期选择"/>
+
+    <TextView
+        android:id="@+id/selectThing"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/selectDate"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="select"
+        android:text="设备选择"/>
+
+    <TextView
+        android:id="@+id/circle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/selectThing"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="select"
+        android:text="圆环百分比"/>
+    <TextView
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/circle"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="select"
+        android:text="对话框"/>
+    <TextView
+        android:id="@+id/toast"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dialog"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="select"
+        android:text="Toast"/>
+
+    <LinearLayout
+        android:id="@+id/circle_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toast"
+        android:gravity="center"
+        android:orientation="horizontal"/>
+
+</RelativeLayout>

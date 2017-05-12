@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ly_myinfo_changeaddress"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_transparent"
+              android:gravity="bottom"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            >
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x12"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/color_aaaaaa"
+                android:textSize="@dimen/x23"/>
+
+
+            <TextView
+                android:id="@+id/btn_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x12"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@color/color_ff6a5a"
+                android:textSize="@dimen/x23"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y266"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <com.example.user.mydate.view.wheelview.WheelView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <com.example.user.mydate.view.wheelview.WheelView
+                android:id="@+id/wv_device"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                />
+            <com.example.user.mydate.view.wheelview.WheelView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
