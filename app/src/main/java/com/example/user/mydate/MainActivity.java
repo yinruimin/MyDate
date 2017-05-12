@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
     private LinearLayout circle_container;
     private TextView dialog;
     private TextView toast;
-    private CustomToast customToast;
+    private CustomToast customToast;  
 
 
     @Override
