@@ -1,12 +1,10 @@
 package com.example.user.mydate;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.user.mydate.view.CircleNumberProgress;
@@ -23,7 +21,7 @@ public class MainActivity extends Activity {
     private TextView selectDevice;
     private ArrayList<String> list;
     private TextView circle;
-    private LinearLayout circle_container;
+    private CircleNumberProgress circle_container;
     private TextView dialog;
     private TextView toast;
     private CustomToast customToast;
@@ -37,7 +35,7 @@ public class MainActivity extends Activity {
         selectDate = (TextView) findViewById(R.id.selectDate);
         selectDevice = (TextView) findViewById(R.id.selectThing);
         circle = (TextView) findViewById(R.id.circle);
-        circle_container = (LinearLayout) findViewById(R.id.circle_container);
+        circle_container = (CircleNumberProgress) findViewById(R.id.circle_container);
         dialog = (TextView) findViewById(R.id.dialog);
         toast = (TextView) findViewById(R.id.toast);
 
@@ -57,6 +55,12 @@ public class MainActivity extends Activity {
         }
 
     }
+
+    private void changePercent() {
+        float percent = (float) (Math.random() * 100);
+        circle_container.setCurrentPercent(percent);
+    }
+
 
     private void showToast() {
         customToast = new CustomToast(this);
@@ -86,11 +90,7 @@ public class MainActivity extends Activity {
 
     }
 
-    private void changePercent() {
-        circle_container.removeAllViews();
-        circle_container.addView(new CircleNumberProgress(this, 63, "%", "完成率"));
 
-    }
 
     private void selectDevice() {
         SelectDevicePopupWindow selectDevicePopupWindow = new SelectDevicePopupWindow(this);

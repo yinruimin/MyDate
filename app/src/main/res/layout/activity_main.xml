@@ -56,12 +56,11 @@
         android:onClick="select"
         android:text="Toast"/>
 
-    <LinearLayout
+    <com.example.user.mydate.view.CircleNumberProgress
         android:id="@+id/circle_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/toast"
-        android:gravity="center"
-        android:orientation="horizontal"/>
+        android:layout_width="@dimen/x123"
+        android:layout_centerInParent="true"
+        android:layout_height="@dimen/y130"
+        android:layout_below="@+id/toast"/>
 
 </RelativeLayout>
